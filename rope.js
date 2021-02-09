@@ -3,7 +3,7 @@ class  Rope{
         
         var options = {
             bodyA: body1,
-            pointB: body2,
+            bodyB: body2,
             pointB:point,
             length:100
             
@@ -14,9 +14,9 @@ class  Rope{
     }
       
     display(){
-        if(this.sling.bodyA){
-        var pointA = this.sling.bodyA.position;
-        var pointB = this.sling.pointB.position;
+        if(this.rope.bodyA){
+        var pointA = this.rope.bodyA.position;
+        var pointB = this.rope.bodyB.position;
         strokeWeight(4);
         line(pointA.x, pointA.y, pointB.x+this.point.x, pointB.y+this.point.y);}
         
